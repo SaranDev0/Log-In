@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmShip Delivery Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Page -->
+        <div id="login-page" class="page">
+            <h1>FARMSHIP</h1>
+            <h2>DELIVERY WEB</h2>
+            <h3>Log In</h3>
+            <form id="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <button type="submit">Login</button>
+                <a href="#" id="forgot-password-link">Forgot Password?</a>
+                <p>Don't have an account? <a href="#" id="create-account-link">Create an account</a></p>
+            </form>
+        </div>
+
+        <!-- Registration Page -->
+        <div id="register-page" class="page">
+            <h1>Register Here</h1>
+            <form id="register-form">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="password" required>
+                <label for="Confirm-password">Confirm Password</label>
+                <input type="password" id="repeat-password" name="repeat-password" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <p><a href="#" id="return-to-login-link">Return to Login Page</a></p>
+        </div>
+
+        <!-- Reset Password Page -->
+        <div id="reset-password-page" class="page">
+            <h1>Reset Password</h1>
+            <form id="reset-password-form">
+                <label for="reset-email">Email</label>
+                <input type="email" id="reset-email" name="email" required>
+                <button type="submit">Reset Password</button>
+            </form>
+            <p><a href="#" id="return-to-login-from-reset-link">Return to Login Page</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
